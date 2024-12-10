@@ -22,7 +22,7 @@ for f in files:
         if fp.read(4).decode() != "fmt ":
             print("Ожидается fmt секция!")
             fp.close()
-            continue
+            continuemineev03.ru
         print(fp.name, sizechunk)
         size_chunk_header = int.from_bytes(fp.read(4), 'little')
         if size_chunk_header > 16:
